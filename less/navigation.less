@@ -1,1 +1,45 @@
 // Navigation code here
+header{
+    
+    border:1px solid @sea-shell;
+    // position:fixed;
+}
+.navbar{
+    background-color: @wild-sand;
+    .flexing(column,space-around,center);
+    
+    width:100%;
+
+
+    &__logo{
+        
+        font-size:3.5rem;
+        padding:3vh 0;
+    }
+
+    &__list{
+        .flexing(row,space-around,center);
+        padding-bottom:3vh;
+        width:30vw;
+        @media @tablet{
+            width:60vw;
+        }
+        @media @mobile{
+            width:85vw;
+        }
+        
+    }
+
+    &__items a{
+        color: @river-bend;
+        font-size:1.6rem;
+        text-decoration: none;
+        .trans();
+        &:hover{
+            border-bottom:3px solid @river-bend;
+            color:rgb(98, 101, 255);
+            .trans();
+            
+        }
+    }
+}
