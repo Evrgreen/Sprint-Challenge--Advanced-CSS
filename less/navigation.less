@@ -1,7 +1,12 @@
 // Navigation code here
-
+header{
+    background-color: @wild-sand;
+    border:1px solid @sea-shell;
+    // position:fixed;
+}
 .navbar{
     .flexing(column,space-around,center);
+    
     width:100%;
 
 
@@ -26,6 +31,14 @@
 
     &__items a{
         color: @river-bend;
+        font-size:1.6rem;
         text-decoration: none;
+        .trans();
+        &:hover{
+            border-bottom:3px solid @river-bend;
+            color:rgb(98, 101, 255);
+            .trans();
+            
+        }
     }
 }

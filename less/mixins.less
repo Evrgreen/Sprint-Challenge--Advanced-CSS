@@ -1,16 +1,18 @@
 // Mixins Here
-.trans(@element:all,@time:300ms,@ease:ease){
+
+// Generic transition mixin
+.trans(@element:all,@time:200ms,@ease:ease){
     transition: @element @time @ease;
 }
 
-
+// FLexbox setting mixin
 .flexing(@direction,@justify,@align){
     display:flex;
     flex-direction: @direction;
     justify-content: @justify;
     align-items: @align;
 }
-
+// Button constructor
 .btn--primary(@width:90%, @bg-color,@font-color,@font-size, @b-radius:2rem){
     background-color: @bg-color;
     border-radius:@b-radius;
