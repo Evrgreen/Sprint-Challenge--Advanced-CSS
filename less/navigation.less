@@ -3,32 +3,42 @@ header{
     background-color: @wild-sand;
     border:1px solid @sea-shell;
     // position:fixed;
+    // padding:50px 30vw;
+   
 }
+// Element holding Spacewalker logo and list of nav items 
 .navbar{
+    background-color: @sea-shell;
+    opacity:.9;
     .flexing(column,space-around,center);
-    
+    position:fixed;
     width:100%;
 
-
+    // Spacewalker logo 
     &__logo{
         
         font-size:3.5rem;
         padding:3vh 0;
     }
-
+    // Navigation items 
     &__list{
         .flexing(row,space-around,center);
-        padding-bottom:3vh;
+        // padding-bottom:3vh;
         width:30vw;
-        @media @tablet{
+        position:relative;
+        bottom:1vh;
+        // position:fixed;
+        // tablet width fix
+        @media @tablet{ 
             width:60vw;
         }
+        // mobile width fix 
         @media @mobile{
             width:85vw;
         }
         
     }
-
+    // The individual Anchors of the nav bar 
     &__items a{
         color: @river-bend;
         font-size:1.6rem;
