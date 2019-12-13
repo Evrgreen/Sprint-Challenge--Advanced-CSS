@@ -1,9 +1,10 @@
 // Home Content
 
 .home {
-    
+  // Img between header and intro 
   &__image{
-    width:100vw;
+    width:100%;
+
 
     img{
       max-width:100%;
@@ -12,7 +13,7 @@
   }
 
 
-
+  // intro text 
   .intro {
 
     h2 {
@@ -24,7 +25,7 @@
     }
   
   }
-
+  // Group of 3 images between intro and 
   .space-images {
     display: flex;
     flex-wrap: wrap;
@@ -67,18 +68,18 @@
     padding:5vh 5vw;
     display: flex;
     justify-content: center;
-    @media @mobile{
-      align-items: center;
-      flex-direction: column;
-      // margin-top:10vh;
-      padding-top:2vh;
-    }
+      @media @mobile{
+        align-items: center;
+        flex-direction: column;
+        // margin-top:10vh;
+        padding-top:2vh;
+      }
     .walk-text {
       width: 50%;
-      @media @mobile{
-        order:3;
-        width:90vw;
-      }
+        @media @mobile{
+          order:3;
+          width:90vw;
+        }
 
       h3 {
         margin-bottom: 10px;
@@ -87,14 +88,11 @@
       p {
         margin-bottom: 26px;
       }
-
+    }
       .btn {
         .btn--primary(13vw,@ebony-clay,@porcelain,1.6rem,.3rem);
         padding: .8rem;
-        &:hover{
-          background-color:@porcelain;
-          color:@ebony-clay
-        }
+        
         @media @tablet{
           width:20vw;
         }
@@ -104,7 +102,7 @@
         }
 
       }
-    }
+    
 
     .walk-img {
       width: 46%;
@@ -122,4 +120,4 @@
       }
     }
   }
-}// home
+}//home
