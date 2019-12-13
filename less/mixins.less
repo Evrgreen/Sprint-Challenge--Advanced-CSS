@@ -20,11 +20,13 @@
     font-size:@font-size;
     .flexing(row,center,center);
     padding:(@font-size*.3) 0;
+    .trans(all,400ms, ease-in-out);
     width:@width;
     &:hover{
         .trans(all,400ms, ease-in-out);
-        background-color: darken(@bg-color, 15%);
-        color: darken(@font-color, 10%);
+        
+            background-color:@font-color;
+            color:@bg-color;
 
     }
    

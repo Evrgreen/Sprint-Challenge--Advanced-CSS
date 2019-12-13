@@ -34,13 +34,19 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
-2. Describe what it means to be mobile first vs desktop first.
+    Adaptive design uses media queries and fixed units to design a certain layout at specific screen sizes. It does not change it's layout dynamically. Responsive sites used responsize units to dynamically change the layout of sites between different screens, and uses media queries to readjust style at certain breakpoints.
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+2. Describe what it means to be mobile first vs desktop first. Mobile first is laying out the skeleton of your site with the mobile design as the base and then using min-width media queries to scale it up to larger screen sizes. Desktop first is the opposite. Using media queries to cutdown a desktop site to fit smaller screens
 
-4. How would you describe preprocessing to someone new to CSS?
+3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units? changes 1 rem to be 10px in height.
+
+4. How would you describe preprocessing to someone new to CSS? 
+
+It takes the same CSS code you are used to writting and adds features that make it faster and easier to code. It also makes it easier to maintain the codebase in the future.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I really like the parent selector, it has changed my class naming conventions. If I have a div named content with an h2 named content__title i can just write &__title to get to my h2. It's intuitive and elements the nested specificity issues caused by chaining elements together (same call of content h2). Proprocessors functions are something I am still experimenting with. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

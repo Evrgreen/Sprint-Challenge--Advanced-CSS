@@ -89,8 +89,12 @@
       }
 
       .btn {
-        .btn--primary(13vw,@ebony-clay,white,1.6rem,.3rem);
+        .btn--primary(13vw,@ebony-clay,@porcelain,1.6rem,.3rem);
         padding: .8rem;
+        &:hover{
+          background-color:@porcelain;
+          color:@ebony-clay
+        }
         @media @tablet{
           width:20vw;
         }
