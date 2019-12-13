@@ -1,1 +1,25 @@
 // Navigation code here
+
+.navbar{
+    .flexing(column,space-around,center);
+    width:100%;
+
+
+    &__logo{
+        
+        font-size:3.5rem;
+        padding:3vh 0;
+    }
+
+    &__list{
+        .flexing(row,space-around,center);
+        padding-bottom:1vh;
+        width:30vw;
+        
+    }
+
+    &__items a{
+        color: @river-bend;
+        text-decoration: none;
+    }
+}
