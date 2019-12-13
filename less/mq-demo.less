@@ -1,0 +1,40 @@
+@mobile:      ~"only screen and (max-width: 529px)";
+@tablet:      ~"only screen and (min-width: 530px) and (max-width: 949px)";
+@desktop:     ~"only screen and (min-width: 950px) and (max-width: 1128px)";
+@desktop-xl:  ~"only screen and (min-width: 1129px)";
+
+// This adds a label in the top-left corner that displays the current media query state
+
+body {
+    &::before { 
+    background: rgb(255, 0, 0);
+    color: white;
+    content: " ";
+    font-size: 2rem;
+    padding: 3rem 2em;
+    // positioning
+    position: absolute;
+    position:fixed;
+        left: 0;
+        top: 0;
+    text-align: center;
+    z-index: 99;
+    @media @mobile {
+      background: #ff53b7;
+      content: "mobile";
+      padding:0;
+    }
+    @media @tablet {
+      background: rgb(51, 170, 86);
+      content: "tablet";
+    }
+    @media @desktop {
+      background: rgb(131, 178, 250);
+      content: "desktop";
+    }
+    @media @desktop-xl {
+      background: rgb(255, 138, 4);
+      content: "desktop-xl";
+    }
+  }
+}

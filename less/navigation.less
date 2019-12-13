@@ -13,8 +13,14 @@
 
     &__list{
         .flexing(row,space-around,center);
-        padding-bottom:1vh;
+        padding-bottom:3vh;
         width:30vw;
+        @media @tablet{
+            width:60vw;
+        }
+        @media @mobile{
+            width:85vw;
+        }
         
     }
 
